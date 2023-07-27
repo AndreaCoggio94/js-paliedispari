@@ -2,20 +2,35 @@
 
 const userChoice = prompt("Scegli tra pari o dispari");
 
-const userNumber = parseInt(prompt("scrivi un numero da 1 a 5"));
+// check for "pari o dispari"
+const lowerUserChoice = userChoice.toLowerCase();
 
-const webNumber = randomNumber(1, 5);
+if (lowerUserChoice === "pari" || lowerUserChoice === "dispari") {
+  // number request
 
-console.log(webNumber);
+  const userNumber = parseInt(prompt("scrivi un numero da 1 a 5"));
+
+  const webNumber = randomNumber(1, 5);
+
+  console.log(webNumber);
+
+  const winnerNumber = userNumber + webNumber;
+
+  console.log(winnerNumber);
+
+  const result = evenNumber(winnerNumber);
+} else {
+  console.log("scrivi pari o dispari");
+}
+
+// generate random number function
 
 function randomNumber(min, max) {
   let number = Math.floor(Math.random() * (max - min)) + min;
   return number;
 }
 
-const winnerNumber = userNumber + webNumber;
-
-console.log(winnerNumber);
+// function to check even numbers
 
 function evenNumber(sum) {
   if (sum % 2 == 0) {
@@ -26,5 +41,3 @@ function evenNumber(sum) {
     return false;
   }
 }
-
-const result = evenNumber(winnerNumber);
