@@ -23,6 +23,8 @@ if (lowerUserChoice === "pari" || lowerUserChoice === "dispari") {
     const result = evenNumber(winnerNumber);
 
     console.log(result);
+
+    printResult(result);
   } else {
     console.log("scrivi un numero tra 1 e 5");
   }
@@ -46,5 +48,17 @@ function evenNumber(sum) {
   } else {
     console.log("ha vinto dispari");
     return false;
+  }
+}
+
+// print result
+
+function printResult(value) {
+  if (value == true && lowerUserChoice === "pari") {
+    alert("Complimenti hai vinto");
+  } else if (value == false && lowerUserChoice === "dispari") {
+    alert("Complimenti hai vinto");
+  } else {
+    alert("Mi dispiace, hai perso");
   }
 }
