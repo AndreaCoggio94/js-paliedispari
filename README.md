@@ -19,6 +19,10 @@ Dichiariamo chi ha vinto.
 - invoco una funzione per vedere se è palindroma
   - chiedendo la parola stessa
   - e la lunghezza
+- nella funzione
+  - **PER OGNI** lettera della parola
+    - controllo se l'ultima pari alla lunghezza è uguale
+    - riduco la lunghezza mano a mano
 
 ## svolgimento Pari e Dispari
 
