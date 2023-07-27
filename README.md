@@ -13,6 +13,13 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
 
+## svolgimento palindroma
+
+- chiedo all'utente una parola
+- invoco una funzione per vedere se è palindroma
+  - chiedendo la parola stessa
+  - e la lunghezza
+
 ## svolgimento Pari e Dispari
 
 - chiedo all'utente di scegliere pari o dispari
