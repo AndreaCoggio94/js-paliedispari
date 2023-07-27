@@ -10,15 +10,22 @@ if (lowerUserChoice === "pari" || lowerUserChoice === "dispari") {
 
   const userNumber = parseInt(prompt("scrivi un numero da 1 a 5"));
 
-  const webNumber = randomNumber(1, 5);
+  //   check for correct number range
+  if (userNumber > 0 && userNumber < 6) {
+    const webNumber = randomNumber(1, 5);
 
-  console.log(webNumber);
+    console.log(webNumber);
 
-  const winnerNumber = userNumber + webNumber;
+    const winnerNumber = userNumber + webNumber;
 
-  console.log(winnerNumber);
+    console.log(winnerNumber);
 
-  const result = evenNumber(winnerNumber);
+    const result = evenNumber(winnerNumber);
+
+    console.log(result);
+  } else {
+    console.log("scrivi un numero tra 1 e 5");
+  }
 } else {
   console.log("scrivi pari o dispari");
 }
@@ -34,10 +41,10 @@ function randomNumber(min, max) {
 
 function evenNumber(sum) {
   if (sum % 2 == 0) {
-    console.log("pari");
+    console.log("ha vinto pari");
     return true;
   } else {
-    console.log("dispari");
+    console.log("ha vinto dispari");
     return false;
   }
 }
