@@ -42,8 +42,8 @@ function palindroma(word, length) {
   // if to send out the right alert
 
   if (reverseWord.length == length) {
-    alert(userWord + " è una parola palindroma");
+    console.log(userWord + " è una parola palindroma");
   } else {
-    alert(userWord + " non è una parola palindroma");
+    console.log(userWord + " non è una parola palindroma");
   }
 }
