@@ -12,3 +12,13 @@ Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzion
 Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
+
+## svolgimento Pari e Dispari
+
+- chiedo all'utente di scegliere pari o dispari
+- chiedo un numero
+- invoco una funzione per il numero random
+- creo la funzione per il numero random
+- sommo il numero della funzione e dell'utente
+- invoco una funzione per determinare se la somma è pari o dispari
+- dichiaro il vincitore
