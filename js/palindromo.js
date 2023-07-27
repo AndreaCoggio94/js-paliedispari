@@ -6,9 +6,14 @@ const userWord = prompt("Inserisci una parola");
 
 const lowerCaseUserWord = userWord.toLowerCase();
 
+// check if userWord is a number
 // evoking function
 
-palindroma(lowerCaseUserWord, userWord.length);
+if (isNaN(userWord)) {
+  palindroma(lowerCaseUserWord, userWord.length);
+} else {
+  alert("inserisci una parola non un numero");
+}
 
 // function to check words for "palindrome"
 
