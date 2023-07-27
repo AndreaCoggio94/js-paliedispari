@@ -21,8 +21,10 @@ Dichiariamo chi ha vinto.
   - e la lunghezza
 - nella funzione
   - **PER OGNI** lettera della parola
-    - controllo se l'ultima pari alla lunghezza è uguale
+    - controllo se l'ultima lettera pari alla lunghezza è uguale
     - riduco la lunghezza mano a mano
+    - mi salvo in un array le lettere solo se uguali
+- se la lunghezza della parola dell'utente e la lunghezza dell'array invertito è uguale, allora è palindroma
 
 ## svolgimento Pari e Dispari
 
